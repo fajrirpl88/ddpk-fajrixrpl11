@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Kotak Menyatu</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <style>
+    
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
 
+    <!-- Container Utama yang Menyatu -->
+    <div class="container p-0 my-4" style="border: 2px solid black; width: 100%; max-width: 800px;">
+      
+      <!-- 1. Header (Kuning, Tinggi 90px) -->
+      <div class="row g-0">
+        <div class="col-12 box" style="background-color: yellow; height: 90px; color: black;">
+          Header (90px)
+        </div>
+      </div>
+
+      
+      <div class="row g-0">
+        
+        <div class="col-4 box" style="background-color: #007bff; height: 220px;">
+          Sidebar (220px)
+        </div>
+         <div class="col-8 box" style="background-color: #17a2b8; height: 220px;">
+          Content (220px)
+        </div>
+      </div>
+
+        <div class="row g-0">
+        <div class="col-12 box" style="background-color: darkgreen; height: 90px;">
+          Footer (90px)
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
