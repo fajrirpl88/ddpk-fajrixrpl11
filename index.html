@@ -3,41 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <title>Layout Menyatu</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    
-    <style>
-      .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        color: white;
-      }
-    </style>
   </head>
   <body>
-    <div class="container p-0 my-4" style="border: 2px solid black; max-width: 900px;">
+    <div class="container p-0 my-4" style="max-width: 900px;">
       <div class="row g-0">
-        <div class="col-12 box" style="background-color: yellow; height: 90px; color: black;">
-          Header (90px)
-        </div>
+        <div class="col-12" style="background-color: yellow; height: 90px;"></div>
       </div>
       <div class="row g-0 flex-nowrap">
-        <div class="col-3 box" style="background-color: #004085; height: 220px;">side bar
-         
-        </div>
-        <div class="col-6 box" style="background-color: #007bff; height: 220px;">
-          content
-        </div>
-        <div class="col-3 box" style="background-color: #17a2b8; height: 220px;">
-          header
-        </div>
+        <div class="col-3" style="background-color: #004085; height: 220px;"></div>
+        <div class="col-6" style="background-color: #007bff; height: 220px;"></div>
+        <div class="col-3" style="background-color: #17a2b8; height: 220px;"></div>
       </div>
       <div class="row g-0">
-        <div class="col-12 box" style="background-color: darkgreen; height: 90px;">
-          Footer
-        </div>
+        <div class="col-12" style="background-color: darkgreen; height: 90px;"></div>
       </div>
 
     </div>
