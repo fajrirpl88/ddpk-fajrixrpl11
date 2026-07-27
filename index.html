@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Kotak Menyatu</title>
+    <title>Layout 3 Kolom Menyatu</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-     <style>
+    
+    <style>
       .box {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
         font-weight: bold;
+        color: white;
       }
     </style>
   </head>
   <body>
-
-    <div class="container p-0 my-4" style="border: 2px solid black; width: 100%; max-width: 800px;">
+    <div class="container p-0 my-4" style="border: 2px solid black; max-width: 900px;">
       <div class="row g-0">
         <div class="col-12 box" style="background-color: yellow; height: 90px; color: black;">
           Header (90px)
         </div>
       </div>
-      <div class="row g-0">
-        <div class="col-4 box" style="background-color: #007bff; height: 220px;">
-          Sidebar (220px)
+      <div class="row g-0 flex-nowrap">
+        <div class="col-3 box" style="background-color: #004085; height: 220px;">
+          Sidebar Kiri (220px)
         </div>
-        <div class="col-8 box" style="background-color: #17a2b8; height: 220px;">
-          Content (220px)
+        <div class="col-6 box" style="background-color: #007bff; height: 220px;">
+          Content Tengah (220px)
+        </div>
+        <div class="col-3 box" style="background-color: #17a2b8; height: 220px;">
+          Sidebar Kanan (220px)
         </div>
       </div>
       <div class="row g-0">
